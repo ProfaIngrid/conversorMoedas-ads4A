@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /* #00c9a7 */
 *{
     margin: 0;
@@ -6,6 +8,7 @@
 body{
     background-color: #fefedf;
     height: 100vh;
+    font-family: "Oswald", sans-serif;;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,9 +18,19 @@ header{
     background-color: #845ec2;
     color: #fff;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0 10px;
     align-items: center;
     height: 15%;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #2d0173;
 }
 
 footer{
@@ -27,4 +40,89 @@ footer{
     justify-content: center;
     align-items: center;
     height: 10%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+}
+
+.icon-input-nome{
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+
+input, select {
+    border: 0;
+    height: 90%;
+    border-radius: 10px;
+}
+
+input:focus, select:focus{
+    outline: 0;
+}
+
+
+.img-infos{
+    height: 100%;
+    width: 30%;
+}
+
+.intro{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.intro p {
+     margin-left: 20px;
+     margin-bottom: 10px;
+}
+
+.infos {
+    flex-direction: column;
+    align-items: center;
+}
+
+.textos-infos{
+    flex-direction: column;
+}
+
+.cotacoes-info td{
+    border: 2px solid #845ec291;
+    margin: 0;
+    text-align: center;
+}
+
+.cotacoes-info {
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cotacoes-info tr:first-child{
+    background-color: #845ec291;
+    color: #fff;
+}
+ 
+.btn-principal{
+    color:#fff;
+    background-color: #845ec2;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.btn-principal:hover{
+    background-color: #2d0173;
+    cursor: pointer;
 }
